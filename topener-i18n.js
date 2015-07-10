@@ -47,7 +47,7 @@ topener.i18n = function(){
             
             
             for (key in vars){
-                string = string.replace('%'+key+'%', vars[key]);
+                string = string.replace('{'+key+'}', vars[key]);
             }
             
             return string;
